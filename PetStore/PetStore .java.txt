@@ -1,0 +1,50 @@
+package com.selenium.JavaSelenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class PetStore {
+
+	public static void main(String[] args) throws Exception {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\pcpatil\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		//chrome permission
+		ChromeOptions co=new ChromeOptions();
+		co.setBinary("C:\\Users\\pcpatil\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
+		WebDriver driver=new ChromeDriver(co);
+		driver.navigate().to("https://google.co.in");
+		//Opening pawsindia
+		driver.findElement(By.name("q")).sendKeys("pawsindia",Keys.ENTER);
+		//maximize
+		driver.manage().window().maximize();
+		driver.findElement(By.xpath("//*[@id=\"rso\"]/div[1]/div/div/div/div/div/div/div/div[1]/div/a/h3")).click();
+		//search for dog food
+		driver.findElement(By.xpath("//*[@id=\"sticky-wrapper\"]/div/div/div[1]/div/div[3]/div[1]/div/div/div[1]/form/input[3]")).sendKeys("Dog food",Keys.ENTER);
+		driver.findElement(By.xpath("//*[@id=\"grid-product-form--7606068445436-template--16728827789564__main\"]/a")).click();
+		//add to cart
+		driver.findElement(By.xpath("//*[@id=\"swatch-grid-product-form--7606068445436-template--16728827789564__main-\"]/div[3]/button")).click();
+		try{
+			//submit
+		driver.findElement(By.xpath("//*[@id=\"sticky-wrapper\"]/div/div/div[1]/div/div[3]/div[2]/a/svg/path[3]")).click();
+		} catch (Exception e) {
+			// TODO: handle exception
+			//System.out.println("no");
+		}
+		//close pop-up
+		driver.findElement(By.xpath("//*[@id=\"search-376-results-found-for-quot-dog-food-quot\"]")).click();
+		//opens new tab
+		driver.switchTo().newWindow(WindowType.TAB);
+        driver.get("https://pawsindia.com/cart");
+        //remove the item and open new cart tab
+        driver.switchTo().newWindow(WindowType.TAB);
+        driver.get("https://pawsindia.com/cart/change?line=1&quantity=0");
+	}
+	
+
+}
