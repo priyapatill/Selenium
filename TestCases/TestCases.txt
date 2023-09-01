@@ -1,0 +1,83 @@
+1 Test Case :
+1. Open https://www.flipkart.com/
+2.Click on the "Login" button.
+3.Enter valid username and password.
+4.Click the "Login" button.
+5.Verify that the user is redirected to their account page.
+-------------------------------------------------------------
+
+2 Test Case:
+1. Open browser to the Flipkart website.
+2. Enter "iPhone" in the search bar.
+3. Press "Enter" or click the search icon.
+4. Verify that relevant search results for "iPhone" are displayed.
+-------------------------------------------------------------------
+
+3 Test Case:
+1. Open browser to the Flipkart website.
+2. Search and select a product (e.g., "Bluetooth headphones").
+3. Click on the product to view its details.
+4. Click the "Add to Cart" button.
+5. Click the "Cart" icon to view the cart.
+6. Verify that the product added to the cart is displayed.
+------------------------------------------------------------------------------------
+
+4 Test Case:
+1. Open browser to the Flipkart website.
+2. Log in using valid credentials.
+3. Navigate to the user account settings or profile page.
+4. Click on the "Edit Profile" or "Update Information" option.
+5. Update any relevant user information (e.g., name, email, phone number).
+6. Click the "Save" or "Update" button.
+7. Verify that a success message is displayed indicating the profile update.
+-------------------------------------------------------------------------------------
+
+5 Test Case:
+1. Open browser to the Flipkart website.
+2. Search for a product of your choice (e.g., "Laptop").
+3. Select a product from the search results.
+4. On the product details page, click the "Add to Cart" button.
+5. Verify that the product is added to the cart.
+--------------------------------------------------------------------------------------
+
+6 Test Case:
+1. Open the browser and navigate to the Flipkart website.
+2. Search for a specific product (e.g., "Samsung Galaxy M31").
+3. Click on the product link in the search results to view its details.
+4. Scroll down to find the "Product Ratings and Reviews" section.
+5. Verify that the average rating (e.g., 4.5 stars) is displayed correctly.
+------------------------------------------------------------------------------------------------------
+
+7 Test Case:
+1. Open the browser and go to the Flipkart website.
+2. Search for a product you want to add to your wishlist (e.g., "Wireless Earbuds").
+3. Select a product from the search results to view its details.
+4. On the product details page, locate the "Add to Wishlist" button.
+5. Click the "Add to Wishlist" button.
+6. If prompted, log in with valid credentials to add the product to your wishlist.
+7. Verify that a success message appears indicating the addition to the wishlist.
+------------------------------------------------------------------------------------------------------------
+
+8 Test Case
+1. Open the browser and navigate to the Flipkart website.
+2. Search for a specific category of products (e.g., "Laptops").
+3. On the search results page, locate the "Sort By" dropdown menu.
+4. Click on the dropdown to reveal sorting options (e.g., "Price: Low to High").
+5. Select a sorting option from the list (e.g., "Price: High to Low").
+6. Verify that the search results are rearranged according to the selected sorting order.
+---------------------------------------------------------------------------------------------------------------
+9 Test Case
+1. Open the browser and go to the Flipkart website.
+2. Search for "Gift Cards" using the search bar.
+3. Select a gift card from the search results to view its details.
+4. Verify that the gift card details, including the value and description, are accurate.
+------------------------------------------------------------------------------------------------------------------
+
+10 Test Case
+1. Open the browser and navigate to the Flipkart website.
+2. Log in using valid credentials to access your account.
+3. Locate the "Orders" or "Order History" section in your account.
+4. Click on the "Orders" link to view your order history.
+5. Select a recent order from the list to track its status.
+6. Verify that the order details, including order ID and status, are correct.
+
