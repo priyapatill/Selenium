@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="methods" name="Suite">
+  <test name="Test">
+  <groups>
+  <run>
+  <include name="G1">
+  </include>
+  </run>
+  </groups>
+    <classes>
+      <class name="GroupingDay1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
